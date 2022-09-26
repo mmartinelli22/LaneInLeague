@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './App.css'
 // import { Switch, Route } from "react-router-dom";
 import { fetchData } from '../apiCalls';
 import { ChampionsLoad } from '../champion-container/champion-container'
@@ -73,11 +74,11 @@ const App: React.FC = () => {
             const champions = json
             setAppState({ champions });
         }
+
         );
     }, []);
-    console.log({ 'App state!': appState })
     return (
-        < div>
+        < div className="champion-load">
             <ChampionsLoad characters={appState.champions} />
         </div>
     )

@@ -6,12 +6,13 @@ export interface LoadCharactersProps {
 }
 
 export const ChampionsLoad: React.FC<LoadCharactersProps> = ({ characters }) => {
-    const featureChampions = characters.map((character, index) => {
+    const featureChampions = characters.map((character, index,) => {
         return (
             <IndividualChampion
                 champion={character}
                 index={index}
                 key={`${character.id}-${index}`}
+
             />
         )
     })

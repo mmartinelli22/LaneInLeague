@@ -1,0 +1,47 @@
+h2 {
+    font-family: title;
+    color: black;
+    font-size: 1.8em;
+    letter-spacing: 0.12em;
+    margin: 2%;
+    color: rgba(139, 45, 11, 0.9);
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 80.5;
+    letter-spacing: 0.12em;
+    margin: 2%;
+    color: rgb(233, 75, 75);
+    width: 100%;
+}
+
+
+.champion-img:hover {
+    cursor: pointer;
+}
+
+.single-champion {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2%;
+    width: 110%;
+    background-color: rgba(49, 119, 231, 0.85);
+    box-shadow: 0 1px 15px 1px rgba(255, 105, 180, 0.35);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 2px;
+}
+
+.single-champion:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 1px 15px 2px rgb(174, 194, 50);
+    text-shadow: 0 1px rgba(188, 161, 28, 0.95);
+    cursor: pointer;
+}
